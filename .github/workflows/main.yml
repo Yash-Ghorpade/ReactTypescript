@@ -34,3 +34,4 @@ jobs:
           port: ${{ secrets.HOSTINGER_SSH_PORT }} # Prefer SSH key over password
           source: "dist/*"
           target: "/home/${{ secrets.HOSTINGER_SSH_USER }}/public_html/yash/react"  # Adjust the target path
+          strip_components: 1
