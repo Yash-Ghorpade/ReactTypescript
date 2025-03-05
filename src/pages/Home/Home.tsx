@@ -1,21 +1,20 @@
 import { JSX } from "react";
 import { NavigationBar } from "./NavigationBar";
 import { PaymentButton } from "./PaymentButton";
-import { useIsMobile } from "@/hooks/use-mobile";
+// import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Home = (): JSX.Element => {
-  const isMobile = useIsMobile();
+  // const isMobile = useIsMobile();
   return (
     <>
       <div className="NavBar">
         <div className="NavBar2"></div>
         <NavigationBar />
       </div>
-      {isMobile && (
-        <div>
-          <PaymentButton />
-        </div>
-      )}
+
+      <div>
+        <PaymentButton />
+      </div>
     </>
   );
 };
