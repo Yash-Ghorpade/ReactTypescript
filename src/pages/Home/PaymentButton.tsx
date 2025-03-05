@@ -19,5 +19,5 @@ export const PaymentButton: React.FC = () => {
     window.location.href = upiLink;
   };
 
-  return <Button onClick={handlePayment}>Pay</Button>;
+  return <Button onClick={handlePayment}>Pay Now</Button>;
 };
